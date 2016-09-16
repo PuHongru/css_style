@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>左右两列定宽中间自适应</title>
+    <style type="text/css">
+        .header .footer{
+            width: 100%;
+            text-align: center;
+            background-color: #10c0b7;
+            height: 30px;
+            line-height: 30px;
+
+        }
+        .container{
+            text-align: center;
+        }
+        .mainBox{
+            float: left;
+            width: 100%;
+        }
+        .content{
+            margin: 0 210px 0 310px;
+            background-color: bisque;
+        }
+        .subMainBox{
+            float: left;
+            width: 300px;
+            margin-left: -100%;
+            background-color: coral;
+        }
+        .sideBox{
+            float: left;
+            width: 200px;
+            margin-left: -200px;
+            background-color: coral;
+        }
+        .footer{
+            clear: both;
+            background-color: crimson;
+        }
+        .header{
+            background-color: #10c0b7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">头部信息</div>
+    <div class="container">
+        <div class="mainBox">
+            <div class="content">
+                主要内容
+            </div>
+        </div>
+        <div class="subMainBox">次要内容区</div>
+        <div class="sideBox">侧边栏</div>
+    </div>
+    <div class="footer">底部信息</div>
+</body>
+</html>

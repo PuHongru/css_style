@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>单列自适应单列定宽</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .header,.footer{
+            width: 100%;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+        }
+        .container{
+            text-align: center;
+        }
+        .mainBox{
+            float: left;
+            width: 100%;
+        }
+        .content{
+            margin: 0 310px 0 0;
+            background-color: bisque;
+        }
+        .sideBox{
+            float: left;
+            width: 300px;
+            margin-left: -300px;
+            background-color: aquamarine;
+        }
+        .footer{
+            clear: both;
+        }
+        .header,.footer{
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">头部信息</div>
+    <div class="container">
+        <div class="mainBox">
+            <div class="content">主要内容区域</div>
+        </div>
+        <div class="sideBox">侧边栏</div>
+    </div>
+    <div class="footer">底部信息</div>
+</body>
+</html>

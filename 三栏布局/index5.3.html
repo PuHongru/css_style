@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>左侧定宽右侧及中间自适应结构</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .header,.footer{
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background-color: #10c0b7;
+        }
+        .container{
+            text-align: center;
+        }
+        .mainBox{
+            width: 100%;
+            float: left;
+        }
+        .content{
+            margin: 0 21% 0 210px;
+            background-color: antiquewhite;
+        }
+        .subMainBox{
+            width: 200px;
+            float: left;
+            margin-left: -100%;
+            background-color: aquamarine;
+        }
+        .sideBox{
+            float: left;
+            width: 20%;
+            margin-left: -20%;
+            background-color: aquamarine;
+        }
+        .footer{
+            clear: both;
+        }
+        .header,.footer{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">头部信息</div>
+    <div class="container">
+        <div class="mainBox">
+            <div class="content">
+                主要内容
+            </div>
+        </div>
+        <div class="subMainBox">次要内容区</div>
+        <div class="sideBox">侧边栏</div>
+    </div>
+    <div class="footer">底部信息</div>
+</body>
+</html>
